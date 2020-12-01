@@ -1,0 +1,46 @@
+.updateCard{
+
+    &__container{
+        border-radius: 3px;
+        width: 32rem;
+        padding: 2rem;
+        background-color: rgba($white,0.75);
+        animation: moveInBottom 2s ease-in;
+        @include respond(tab-port){
+            align-self: center;
+        }
+    }
+    &__section{
+        margin-bottom: 1rem;
+    }
+    &__heading{
+        font-size: $font-heading-s;
+        margin-bottom: 1rem;
+        color: $gold;
+    }
+    &__text{
+        
+    }
+    &__event{
+        display: flex;
+
+        &__date{
+            border-radius: 3px;
+            width: 4rem;
+            height: 4rem;
+            background-color: rgba($gold,0.8);
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            &__content{
+                align-self: center;
+            }
+        }
+        &__text{
+            align-self: center;
+            margin-left: 1rem;
+        }
+    }
+}

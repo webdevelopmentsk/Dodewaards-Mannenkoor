@@ -1,0 +1,46 @@
+.navigation{
+    &__container{
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+    &__heading{
+        font-size: $font-heading-s;
+        width: 25%;
+        display: flex;
+        align-self: center;
+        font-size: 1.8rem;letter-spacing: 3px;
+        &--1{font-weight: 900;color: $gold;}
+        &--2{}
+    }
+
+    &__bar{
+        width: 90%;
+        align-self: center;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    &__link{
+        
+        &,&:link, &:visited{
+            text-decoration: none;
+            font-size: $font-p;
+            color: $grey-dark;
+            margin: 1rem 1rem;
+            display: inline-block;
+        }
+
+        &:hover{
+            transform: translateY(-3px);
+            color: $gold;
+            //border-bottom: $gold 2px solid;
+        }
+        &:active, &:focus{
+            color: $gold;
+            border-bottom: $gold 2px solid;
+        }
+    }
+}

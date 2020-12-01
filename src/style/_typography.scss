@@ -1,0 +1,27 @@
+.heading{
+    &--l{text-transform: uppercase; font-size: $font-heading-l;letter-spacing: 3px;font-weight: 400;}
+    &--m{font-size: $font-heading-m;letter-spacing: 3px;font-weight: 800;}
+    &--m{text-transform: uppercase;font-size: $font-heading-s;letter-spacing: 3px;}
+}
+.paragraph{
+    font-size: $font-p;
+    line-height: 140%;
+    &--light{
+        color: $white;
+    }
+    &--dark{
+        color: $grey-dark;
+    }
+    &--gold{
+        color: $gold;
+    }
+}
+
+.underline{
+
+    &--grey{
+        background-color: $grey-dark;
+        height: 1px;
+        margin-top: 0.5rem;
+    }
+}

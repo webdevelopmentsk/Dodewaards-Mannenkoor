@@ -1,0 +1,49 @@
+.landingPage{
+
+    &__container{
+        width: 100%;
+        height: 100vh;
+        display: flex;flex-wrap: wrap;
+        background-image: url(../../assets/cover.jpg);
+        background-size: cover;
+    }
+    &__updateCard{
+        position: absolute;
+        top:9rem;
+        right: 5rem;
+        @include respond(tab-port){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+/*
+    &__heading{
+        width: 100%;
+        border-radius: 4px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5rem;
+        padding: 4rem 0;
+        &--1{
+            margin-right: 2rem;
+            color: $gold; 
+            animation: moveInLeft 3s ease-in;
+            background-color: $black;
+            height: 5rem;
+            padding: 1rem;
+        }
+        &--2{
+            margin-bottom: 3rem;
+            color: $white;
+             animation: displaySlide 3s ease-in;
+             background-color: $gold;
+             height: 5rem;
+             padding: 1rem;
+        }
+        
+    }
+*/
