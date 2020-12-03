@@ -6,9 +6,7 @@
         padding: 2rem;
         background-color: rgba($white,0.75);
         animation: moveInBottom 2s ease-in;
-        @include respond(tab-port){
-            align-self: center;
-        }
+
     }
     &__section{
         margin-bottom: 1rem;
@@ -16,10 +14,10 @@
     &__heading{
         font-size: $font-heading-s;
         margin-bottom: 1rem;
-        color: $gold;
+        color: $grey-dark;
     }
     &__text{
-        
+
     }
     &__event{
         display: flex;

@@ -2,19 +2,14 @@ import React , { useState, useEffect } from 'react';
 import { content } from '../data/content';
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo-1.png'
-const Navigation = () =>{
+import NavigationLinkList from './NavigationLinkList';
 
-    const [routeIndex, setRouteIndex] = useState(0);
+const Navigation = ({onBurgerClick,onLinkClick,routeIndex,displayBurgerBar}) =>{
 
-    useEffect(()=>{
-        content.routes.forEach(()=> (route,index) =>{
-            switch (window.location.pathname) {
-                case route.link:setRouteIndex(index); break;
-                default:break;
-              }
-        })
-    },[routeIndex])
+
+
     return(
+        <>
         <div className ="navigation__container">
             <div className ="navigation__heading">
                 <div className ="navigation__heading__group">
@@ -25,33 +20,35 @@ const Navigation = () =>{
                     <Link 
                     className ="navigation__heading__logo__link" 
                     to={content.routes[0].link}
-                    onClick ={()=>setRouteIndex(0)}
+                    onClick ={()=> onLinkClick(0)}
                     >
-                        <img className ="navigation__heading__logo__content"src ={logo} alt ="Logo"/>
                         <div className ="navigation__heading__logo--line"></div>
+                        <img className ="navigation__heading__logo__content"src ={logo} alt ="Logo"/>
+                       
                     </Link>
                 </div>
             </div>
-
-            <div className ="navigation__bar">
-                {content.routes.map((route,index)=>
-                <div key ={index} className ="navigation__link__container">
-                <Link className ={routeIndex === index ?"navigation__link navigation__link__active":"navigation__link"} 
-                to={route.link}
-                onClick ={()=>setRouteIndex(index)}
-                >
-                {route.name}
-                </Link></div>)}
-            </div>
-            <div  className ="navigation__burger">
-                <div className ="navigation__burger__line navigation__burger__line--1"></div>
-                <div className ="navigation__burger__line navigation__burger__line--2"></div>
-                <div className ="navigation__burger__line navigation__burger__line--3"></div>
-            </div>
             
+            <div className ="navigation__bar" ><NavigationLinkList onLinkClick = {onLinkClick} routeIndex ={routeIndex} name = 'navigation__bar'/></div>
+            
+            <div  className ="navigation__burger">
+                <input type="checkbox" className="navigation__burger__checkbox" id="navigation-toggle"/>
+                <label htmlFor="navigation-toggle" className="navigation__burger__button">
+                    <span className={displayBurgerBar? "navigation__burger__icon navigation__burger__icon__cross":"navigation__burger__icon"} onClick ={onBurgerClick} >&nbsp;</span>
+                </label> 
+            </div>  
 
         </div>
+        {displayBurgerBar && <div className ="navigation__burger__bar" >
+                    <NavigationLinkList 
+                    onLinkClick = {onLinkClick} 
+                    routeIndex ={routeIndex} 
+                    name = 'navigation__burger__bar'
+                    /></div>
+                } 
+        </>
     )
 }
 
 export default Navigation;
+

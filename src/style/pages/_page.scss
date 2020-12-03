@@ -1,3 +1,5 @@
+
+
 .page{
 
     &__container{
@@ -6,6 +8,7 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 5rem;
+        animation: displayComponent 2s ease-in;
     }
 
     &__heading{
@@ -14,6 +17,7 @@
         margin: 6rem 0;
         margin-left: $navigation-width;
         animation: moveInLeft 1s ease-in;
+        @include respond(tab-port){margin-left: 0;width: 80%;}
     }
     &__section{
         width: 100%;
@@ -22,74 +26,48 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 3rem;
-
+        @include respond(tab-port){margin-left: 0;}
         &__info{
             width: 55%;
             text-align: justify;
+            @include respond(tab-port){width: 80%;}
         }
         &__video{
             filter: grayscale(100%) contrast(110%);
+            @include respond(tab-port){width: 100%;}
         }
     }
 
     
     &__activities{
         width: 70%;
-
-        &__slide{
+        @include respond(tab-port){width: 85%;}
+        &__item{
             width: 100%;
-            &__item{
-                width: 100%;
-                display: none;
-
-                &--open{
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    animation: displaySlide 0.5s ease-in;
-                    filter: sepia(10%) contrast(110%) saturate(110%);
-                    border-radius: 3px;
-                }
-            }
-
+            filter: grayscale(40%) contrast(110%) sepia(20%);
         }
 
-        &__control{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2rem;
-
-            &__caption{
-                font-size: $font-p;
-                color: $grey-dark;
-            }
+        &__caption{
+            font-size: $font-p;
+            color: $grey-dark;
+            margin-bottom: 1rem;
+            text-align: center;
         }
-        &__smallPic{
-            align-self: center;
-            width: 15rem;
-            height: 10rem;
-            filter: grayscale(80%);
-            &:hover{
-                border-radius: 3px;
-                transform: scale(2); z-index: 2;
-                filter: grayscale(0%) sepia(10%) contrast(110%) saturate(110%);
-            }
-        }
+    
     }
 
     &__members{
         width: 100%;
         margin-left: $navigation-width;
         margin-bottom: 5rem;
-        //background-image: linear-gradient(90deg,$grey-light 0%, $white 95%, transparent 5%);
         padding: 3rem;
-
+        @include respond(tab-port){margin-left: 0;}
         &__photo__container{
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+
         }
         &__photo__card{
             width: 18%;
@@ -98,6 +76,7 @@
             &:hover{
                 transform: scale(1.1);
             }
+            @include respond(tab-port){width: 45%;}
         }
         &__photo__content{
             width: 100%;
@@ -112,7 +91,6 @@
 
 .parallax{
 
-    background-size: cover;
     width: 100%;
     min-height: 70vh; 
     background-attachment: fixed;
@@ -120,6 +98,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    @include respond(tab-port){
+        //width: 85%;
+        background-size: contain;
+        background-position: center top; 
+        min-height: 30vh; 
+    }
 
     &__introduction{
         background-image: url("../../assets/intro-1.jpg");
@@ -127,8 +111,9 @@
         filter: grayscale(100%) contrast(120%);
     }
     &__history{
-        min-height: 80vh; 
+
         background-image: url("../../assets/history.jpg");
+        filter: grayscale(100%) contrast(130%);
         &:hover{
             &::before{
                 content: "Dodewaards mannenkoor. foto genomen tussen 1945 en 1948";
