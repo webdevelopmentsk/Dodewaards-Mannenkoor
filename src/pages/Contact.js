@@ -5,6 +5,7 @@ const Contact = () =>{
 
     return(
         <div className ="page__container">
+            <div className ="parallax parallax__contact"></div>
             <div className ="page__heading heading--m">{content.sections.contact.heading}</div>
             <div className="page__section">
                 <div className="page__section__info">

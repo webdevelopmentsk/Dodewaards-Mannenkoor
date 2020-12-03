@@ -13,7 +13,8 @@ const Navigation = ({onBurgerClick,onLinkClick,routeIndex,displayBurgerBar}) =>{
         <div className ="navigation__container">
             <div className ="navigation__heading">
                 <div className ="navigation__heading__group">
-                    <div className ="navigation__heading__group--1 u-m-right-small">{content.name.first}</div>
+                    <div className ="navigation__heading__group--1">{content.name.first}</div>
+                    <div className ="navigation__heading__group--line"></div>
                     <div className ="navigation__heading__group--2">{content.name.second}</div>
                 </div>
                 <div className ="navigation__heading__logo">
@@ -22,7 +23,6 @@ const Navigation = ({onBurgerClick,onLinkClick,routeIndex,displayBurgerBar}) =>{
                     to={content.routes[0].link}
                     onClick ={()=> onLinkClick(0)}
                     >
-                        <div className ="navigation__heading__logo--line"></div>
                         <img className ="navigation__heading__logo__content"src ={logo} alt ="Logo"/>
                        
                     </Link>

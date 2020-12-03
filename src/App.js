@@ -1,6 +1,6 @@
 import {content} from './data/content';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import react, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 //style
 import './style/main.scss'
 
@@ -19,7 +19,9 @@ const App = () => {
 
   const [routeIndex, setRouteIndex] = useState(0);
 
-  const scrollToTop = () => window.scrollTo(1, 1);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }
 
   const onLinkClick = (index,name) =>{
       setRouteIndex(index);
@@ -27,7 +29,10 @@ const App = () => {
       name === 'navigation__burger__bar' && setDisplayBurgerBar(false);
   };
 
-  const onBurgerClick = () => setDisplayBurgerBar(!displayBurgerBar);;
+  const onBurgerClick = () => {
+    setDisplayBurgerBar(!displayBurgerBar);
+    scrollToTop();
+  }
 
   useEffect(()=>{
       content.routes.forEach((route,index) =>{

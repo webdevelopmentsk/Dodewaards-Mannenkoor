@@ -5,6 +5,7 @@ const Agenda = () => {
 
     return(
         <div className ="page__container">
+            <div className ="parallax parallax__agenda"></div>
             <div className ="page__heading heading--m">{content.sections.agenda.heading}</div>
 
             <div className="page__section">

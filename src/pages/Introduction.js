@@ -1,12 +1,11 @@
 import React from 'react';
 import { content } from '../data/content';
-import history from '../assets/history.jpg';
 import member0 from '../assets/boadMembers/KeesVanDijk.jpg';
 import member1 from '../assets/boadMembers/WimBloemendal.jpg';
 import member2 from '../assets/boadMembers/JanHeikamp.jpg';
 import member3 from '../assets/boadMembers/KeesHoogakker.jpg';
 import member4 from '../assets/boadMembers/CasperVanDoorn.jpg';
-
+import ScrollToTop from "react-scroll-to-top";
 import video from '../assets/intro-video.mp4';
 
 
@@ -26,8 +25,7 @@ const Introduction = () =>{
  
         </div>
         <div className ="page__container">
-            <div className ="parallax parallax__history">
-            </div>
+            <div className ="parallax parallax__history"></div>
             <div className ="page__heading heading--m ">{content.sections.history.heading}</div>
             <div className ="page__section">
             <div className ="page__section__info">
@@ -35,10 +33,9 @@ const Introduction = () =>{
                 <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)}
                 </div>
             </div>
-
         </div>
         <div className ="page__container">
-        <video className = "page__section__video" autoPlay muted loop>
+        <video className = "page__section__video" autoPlay muted loop playsInline>
         <source src = {video} type="video/mp4" />
         </video>
             <div className ="page__heading heading--m  ">{content.sections.board.heading}</div>
@@ -75,6 +72,7 @@ const Introduction = () =>{
             </div>
 
         </div>
+        <ScrollToTop className = 'btn btn__scrollToTop'smooth color={"white"} />
     </>
     )
 }

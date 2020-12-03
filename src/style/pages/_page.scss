@@ -1,5 +1,3 @@
-
-
 .page{
 
     &__container{
@@ -33,8 +31,21 @@
             @include respond(tab-port){width: 80%;}
         }
         &__video{
+            width: 100%;
+            margin: 0;
             filter: grayscale(100%) contrast(110%);
-            @include respond(tab-port){width: 100%;}
+
+            @include respond(tab-port){
+                min-height: 30vh; 
+                background-attachment: scroll;
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                justify-content: center;
+            }
+
         }
     }
 
@@ -83,7 +94,7 @@
             border-radius: 4px;
             overflow: hidden;
             margin-bottom: 1rem;
-            filter: grayscale(0%) contrast(120%);
+            //filter: grayscale(10%) contrast(110%);
         }
     }
 
@@ -98,37 +109,49 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    filter: grayscale(100%) contrast(130%);
     @include respond(tab-port){
-        //width: 85%;
         background-size: contain;
         background-position: center top; 
-        min-height: 30vh; 
+        min-height: 35vh; 
     }
 
     &__introduction{
         background-image: url("../../assets/intro-1.jpg");
         z-index: 1;
-        filter: grayscale(100%) contrast(120%);
     }
     &__history{
 
         background-image: url("../../assets/history.jpg");
-        filter: grayscale(100%) contrast(130%);
-        &:hover{
-            &::before{
-                content: "Dodewaards mannenkoor. foto genomen tussen 1945 en 1948";
-                font-size: $font-p;
-                color: $white;
-                position: fixed;
-                top: 2rem;
-                right: 5rem;
-            }
+        display: flex;
+        justify-content: flex-end;
+        &::before{
+            content: "Dodewaards mannenkoor. Foto genomen tussen 1945 en 1948.";
+            font-size: $font-p;
+            color: $grey-dark; 
+            background-color: $white;
+            padding:0.5rem;
+            margin: 2rem; 
+            height: 2rem;   
+            border-radius: 3px;           
         }
+        @include respond(tab-port){
+            width: 100%;
+            min-height: 50vh; 
+            background-attachment: scroll;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+    }
+    &__agenda{
+        background-image: url(../../assets/agenda.jpg);
 
     }
     &__activities{
         background-image: url("../../assets/activities/Optocht\ bevrijdingsdag\ 5-05-2015-2.jpg");
-        filter: grayscale(100%) contrast(120%);
     }
     &__becomeMember{
         &--1{background-image: url("../../assets/becomeMember-1.jpg");}
@@ -136,6 +159,8 @@
     }
     &__sponser{
         background-image: url("../../assets/sponser.jpg");
-        filter: grayscale(100%) contrast(120%);
+    }
+    &__contact{
+        background-image: url(../../assets/contact.jpg);
     }
 }

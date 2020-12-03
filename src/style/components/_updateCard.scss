@@ -2,11 +2,10 @@
 
     &__container{
         border-radius: 3px;
-        width: 32rem;
+        width: 33rem;
         padding: 2rem;
         background-color: rgba($white,0.75);
         animation: moveInBottom 2s ease-in;
-
     }
     &__section{
         margin-bottom: 1rem;
@@ -39,6 +38,7 @@
         &__text{
             align-self: center;
             margin-left: 1rem;
+            text-align: left;
         }
     }
 }

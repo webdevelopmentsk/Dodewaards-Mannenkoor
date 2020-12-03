@@ -24,4 +24,15 @@
             color: $white;
         }
     }
+    &__scrollToTop{
+        background-color: $gold;
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 2rem;
+        color: $gold;
+        padding: 0.5rem;
+        position: fixed;
+        bottom: 5rem;
+        right: 1rem;
+    }
 }

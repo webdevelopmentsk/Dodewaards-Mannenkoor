@@ -15,7 +15,7 @@ export const content = {
   ],
   sections:{
     introduction:{
-        heading: 'Welcome op de website van het dodewaads mannenkoor',
+        heading: 'Welkom op de website van het dodewaads mannenkoor',
         paragraph: [
             'Het Dodewaards Mannenkoor is een algemeen koor met leden uit Dodewaard en omgeving. Ons koor bestaat sinds 1948 en is een graag geziene gast bij verschillende gelegenheden.',
             'Bij het begin van de vakantie en begin januari worden ook de dames van de leden betrokken bij de activiteit die er dan wordt georganiseerd.De dames en enkele leden van ons koor maken in december ook kerstversieringen welke de leden dan op de markt verkopen.',
@@ -27,7 +27,7 @@ export const content = {
         videos: ['intro-video.mp4', 'intro-video.webm']
     },
     news: {
-        heading: 'Niews & Update',
+        heading: 'Nieuws & Update',
         list:[{date: '27-11-2020', text: '27 November 2020 | Update COVID-19: Uiteraard kan dit alleen doorgaan als de Coronacrisis dit toelaat. '}]
     },
     agenda:{
@@ -89,7 +89,7 @@ export const content = {
          'U mag onze dirigent overtuigen dat u niet kunt zingen, wedden dat u het wel kunt. Noten kunnen lezen is niet noodzakelijk, maar is wel makkelijker.','Elk jaar houden we een nieuwjaarsbijeenkomst en in de zomer een barbecue samen met onze partners, want het Dodewaards Mannenkoor is meer dan zingen alleen!']
         },
         download:{
-            text: 'Download de privicyverklaring',
+            text: 'Download de privacyverklaring',
 
         }
     },

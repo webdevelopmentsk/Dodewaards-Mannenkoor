@@ -1,6 +1,6 @@
 import React from 'react';
 import { content } from '../data/content';
-
+import ScrollToTop from "react-scroll-to-top";
 const BecomeMember = () =>{
     
     return(
@@ -21,6 +21,7 @@ const BecomeMember = () =>{
                 <a className ="btn btn__downloadLink" rel="noreferrer" href="https://drive.google.com/file/d/1OMHJXTlv-G58uza_BgQbUygjXVlBMKTA/view?usp=sharing" target="_blank" download><i className="fa fa-download u-m-right-small"/>{content.sections.becomeMember.download.text}</a>
                 </div>
             </div>
+            <ScrollToTop className = 'btn btn__scrollToTop'smooth color={"white"} />
             <div className ="parallax parallax__becomeMember--2"></div>
         </div>
     )
