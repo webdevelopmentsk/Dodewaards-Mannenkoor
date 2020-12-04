@@ -15,7 +15,7 @@ export const content = {
   ],
   sections:{
     introduction:{
-        heading: 'Welkom op de website van het dodewaads mannenkoor',
+        heading: 'Welkom op de website van het dodewaards mannenkoor',
         paragraph: [
             'Het Dodewaards Mannenkoor is een algemeen koor met leden uit Dodewaard en omgeving. Ons koor bestaat sinds 1948 en is een graag geziene gast bij verschillende gelegenheden.',
             'Bij het begin van de vakantie en begin januari worden ook de dames van de leden betrokken bij de activiteit die er dan wordt georganiseerd.De dames en enkele leden van ons koor maken in december ook kerstversieringen welke de leden dan op de markt verkopen.',

@@ -128,12 +128,12 @@
         &::before{
             content: "Dodewaards mannenkoor. Foto genomen tussen 1945 en 1948.";
             font-size: $font-p;
-            color: $grey-dark; 
-            background-color: $white;
+            color: $white; 
             padding:0.5rem;
             margin: 2rem; 
-            height: 2rem;   
-            border-radius: 3px;           
+            border-radius: 3px; 
+            height: 2%;    
+            text-shadow: 2px 2px $black;  
         }
         @include respond(tab-port){
             width: 100%;
@@ -143,6 +143,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+
         }
 
     }

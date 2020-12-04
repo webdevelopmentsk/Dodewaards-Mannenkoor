@@ -33,11 +33,9 @@ const Introduction = () =>{
                 <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)}
                 </div>
             </div>
-        </div>
-        <div className ="page__container">
-        <video className = "page__section__video" autoPlay muted loop playsInline>
-        <source src = {video} type="video/mp4" />
-        </video>
+            <video className = "page__section__video" autoPlay muted loop playsInline>
+            <source src = {video} type="video/mp4" />
+            </video>
             <div className ="page__heading heading--m  ">{content.sections.board.heading}</div>
             <div className ="page__members">
                 {content.sections.board.paragraph.map((text,index) =>
@@ -72,15 +70,15 @@ const Introduction = () =>{
             </div>
 
         </div>
-        <ScrollToTop className = 'btn btn__scrollToTop'smooth color={"white"} />
+        <ScrollToTop className = 'btn btn__scrollToTop'smooth color={"white"} />y
     </>
     )
 }
 
 export default Introduction;
 
-/*<img className ="page__photo" src ={intro1} alt= "Group Members"/>
-<video className = "page__section__video" autoPlay muted loop>
-<source src = {video} type="video/mp4" />
-</video>
+/*
+        <video className = "page__section__video" autoPlay muted loop playsInline>
+        <source src = {video} type="video/mp4" />
+        </video>
 */
