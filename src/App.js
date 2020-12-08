@@ -37,9 +37,8 @@ const App = () => {
   useEffect(()=>{
       content.routes.forEach((route,index) =>{
           window.location.pathname === route.link && setRouteIndex(index)
-      })
+      });
   },[])
-
   
   return (
     <BrowserRouter>
@@ -86,6 +85,7 @@ const App = () => {
 
     </div>
     </BrowserRouter>
+    
   );
 };
 

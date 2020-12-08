@@ -1,4 +1,12 @@
 .app{
     width: 100%;
     position: relative;
+
+    &__footer{
+        color: $white;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: rgba($black,0.3);
+    }
 }

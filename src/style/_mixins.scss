@@ -1,9 +1,3 @@
-@mixin goldText{
-    color:transparent;
-    background-image: linear-gradient(to bottom right, $c-gold-1, $c-gold-2,$c-gold-3,$c-gold-4);
-    -webkit-background-clip: text;
-    background-clip: text;
-}
 
 //Media Query Manager
 /*

@@ -48,7 +48,7 @@ export const content = {
         'Opzet was, om dat mannengezang aan te houden tot het moment, dat men weer over muziekinstrumenten kon beschikken. Dan kon men weer op de “normale manier” muziek gaan maken. Nou dat is even iets anders gelopen, dan men zich had voorgesteld!',
         'Als mannen zingen is tot op de dag van vandaag nog een activiteit waar zo’n 30 mannen zinvol mee bezig zijn. Daarbij verzorgen de heren optredens binnen en buiten Dodewaard. Zijn een graag geziene gast in o.a bejaardenhuizen en kerken. Het typeert het koor dan ook, dat men van alle gezindten thuis is, naast religieuze liederen, zingt men ook Rijnliederen en liefdesliederen.',
         'Het Dodewaards Mannenkoor voldoet in al die jaren aan een duidelijke behoefte. Dat blijkt wel uit het feit, dat er mannen zijn die reeds 57 jaar lid zijn en nog steeds actief mee zingen.',
-        'Het koor is in de loop van de jaren uitgegroeid van een mannenkoor tot een zingende herensociëteit, zoals onze oud voorzitter Henk Onderstal het vaak noemt. Dat is ook de kracht. Zingen blijft uiteraard super belangrijk, maar het samen als mannenkoor vertoeven en sociaal samen te zijn speelt een steeds grotere rol. Kende men vroeger het vereenzamen van ouderen minder, tegenwoordig is dat een vaststaand feit. Het Dodewaards Mannenkoor biedt middels haar activiteiten mannen een sociaal ontmoetingspunt aan, waar je ook kan zingen.'],
+        'Het koor is in de loop van de jaren uitgegroeid van een mannenkoor tot een zingende herensociëteit, zoals onze oud voorzitter Henk Onderstal het vaak noemt. Dat is ook de kracht. Zingen blijft uiteraard super belangrijk, maar het samen als mannenkoor vertoeven en sociaal samen te zijn speelt een steeds grotere rol. Kende men vroeger het vereenzamen van ouderen minder, tegenwoordig is dat een vaststaand feit. Het Dodewaards Mannenkoor biedt middels haar activiteiten mannen een sociaal ontmoetingspunt aan, waar je ook kan zingen. Als je dingen niet kunt zeggen, dan kun je het zeker wel zingen.'],
         images:[{text: 'Dodewaards mannenkoor. foto genomen tussen 1945 en 1948', image: '../assets/history.jpg'}],
     },
     board:{
@@ -78,7 +78,7 @@ export const content = {
     },
     becomeMember:{
         heading: 'Lid Worden',
-        paragraph:['Nieuwe leden,','Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken','Elke donderdag om 19:30 uur in de openbare basisschool de Bellefleur in Dodewaard Marijkelaan 1. Als je het niet kunt zeggen, zing het maar.',
+        paragraph:['Nieuwe leden,','Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken','Elke donderdag om 19:30 uur tot 21.30 uur. Momenteel tijdens Corona wordt er tot nader bericht niet gezongen. Voor nadere informatie mail naar secretarisdmk@outlook.com. Als je het niet kunt zeggen, zing het maar.',
                     'Waarom zingen?', 'Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling en techniek. De conditie van de (zang)spieren, tactiek, strategie en spelinzicht. Laat dat allemaal over aan de coach van het koor, de dirigent, dan kunnen wij samen lekker zingen. De mooiste muziekinstrumenten zijn zingende mensen!',
                     "Als je gaat zingen heb je jouw instrument altijd bij je. Dat is makkelijk, jouw instrument doet het altijd en je kunt meteen beginnen. Je kunt zonder les gehad te hebben meteen al een aardig nootje zingen. Zingen neemt niet te duiden barrières weg, verzoent en geeft verbroedering. Al zingende vervalt de schroom, komen emoties los, ontstaat begrip en verheldering. Vandaar de uitdrukking als iemand niet uit zijn woorden kan komen: ‘zing het maar’.",],
         list:
@@ -98,18 +98,14 @@ export const content = {
         paragraph: ['Sponsoren en donateurs,',
                     'Het Dodewaards Mannenkoor kan bijna niet bestaan zonder sponsoring en donaties. Natuurlijk houden wij zelf ook steeds acties om onze verenigingskas aan te vullen, maar dat blijkt vaak niet genoeg om al onze onkosten te bestrijden. Als ons koor u aanspreekt en u wilt ons financieel steunen, dan zijn wij daar erg dankbaar voor.',
                     'Als sponsor en donateur ondersteunt u het in stand houden van het koor. Als sponsor krijgt u op onze site een vermelding van het logo van uw bedrijf. Indien gewenst maken wij een link naar uw eigen website.',
-                    'Heeft u belangstelling om ons op enige manier te ondersteunen, dan kunt u contact opnemen met de penningmeester.',],
+                    'Heeft u belangstelling om ons op enige manier te ondersteunen, dan kunt u contact opnemen met de secretaris.',],
 
     },
     contact:{
         heading: 'Contact',
         paragraph: ['Secretaris: Wim Bloemendal', 'Email: secretarisdmk@outlook.com'],
 
-    },
-    footer:{
-        text: '@2020 by Dodewaards Mannekoor',
-    },
-    
+    },    
 
   }
 

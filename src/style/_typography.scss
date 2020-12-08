@@ -15,13 +15,8 @@
     &--gold{
         color: $gold;
     }
-}
-
-.underline{
-
-    &--grey{
-        background-color: $grey-dark;
-        height: 1px;
-        margin-top: 0.5rem;
+    &--highlight{
+        color: $gold;
+        background-color: transparent;
     }
 }

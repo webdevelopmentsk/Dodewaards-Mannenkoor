@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React from 'react';
 import Slider from 'infinite-react-carousel';
 import { content } from '../data/content';
 import  image0  from '../assets/activities/Deelname aan winkel van sinkel.jpg'

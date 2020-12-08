@@ -1,11 +1,11 @@
-.u-text-gold{@include goldText;}
+.u-text-gold{color:$gold;}
 .u-center-text{text-align: center;}
 .u-text-white{color: $white;}
 .u-uppercase{text-transform: uppercase;}
 .u-m-right-small{margin-right: .5rem;}
+.u-m-left-small{margin-left: .5rem;}
 
 .u-m-bottom-paragraph{margin-bottom: 3rem;}
-.u-underline-gold{border-bottom: $c-gold-4 2px solid;}
 .u-font-p {font-size: $font-p;}
 .u-font-p-s {font-size: $font-p-s;}
 

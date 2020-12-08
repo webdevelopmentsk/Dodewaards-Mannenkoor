@@ -1,8 +1,9 @@
-import React , { useState, useEffect } from 'react';
+import React from 'react';
 import { content } from '../data/content';
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo-1.png'
 import NavigationLinkList from './NavigationLinkList';
+import Footer from '../components/Footer';
 
 const Navigation = ({onBurgerClick,onLinkClick,routeIndex,displayBurgerBar}) =>{
 
@@ -27,9 +28,13 @@ const Navigation = ({onBurgerClick,onLinkClick,routeIndex,displayBurgerBar}) =>{
                        
                     </Link>
                 </div>
+                
             </div>
             
-            <div className ="navigation__bar" ><NavigationLinkList onLinkClick = {onLinkClick} routeIndex ={routeIndex} name = 'navigation__bar'/></div>
+            <div className ="navigation__bar" >
+                <NavigationLinkList onLinkClick = {onLinkClick} routeIndex ={routeIndex} name = 'navigation__bar'/>
+                <Footer />
+            </div>
             
             <div  className ="navigation__burger">
                 <input type="checkbox" className="navigation__burger__checkbox" id="navigation-toggle"/>
@@ -37,14 +42,17 @@ const Navigation = ({onBurgerClick,onLinkClick,routeIndex,displayBurgerBar}) =>{
                     <span className={displayBurgerBar? "navigation__burger__icon navigation__burger__icon__cross":"navigation__burger__icon"} onClick ={onBurgerClick} >&nbsp;</span>
                 </label> 
             </div>  
-
+            
         </div>
-        {displayBurgerBar && <div className ="navigation__burger__bar" >
+        {displayBurgerBar && 
+                    <div className ="navigation__burger__bar" >
                     <NavigationLinkList 
                     onLinkClick = {onLinkClick} 
                     routeIndex ={routeIndex} 
                     name = 'navigation__burger__bar'
-                    /></div>
+                    />
+                    <Footer />
+                    </div>
                 } 
         </>
     )

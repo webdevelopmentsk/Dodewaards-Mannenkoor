@@ -7,7 +7,7 @@ import member3 from '../assets/boadMembers/KeesHoogakker.jpg';
 import member4 from '../assets/boadMembers/CasperVanDoorn.jpg';
 import ScrollToTop from "react-scroll-to-top";
 import video from '../assets/intro-video.mp4';
-
+import Highlighter from "react-highlight-words";
 
 const Introduction = () =>{
 
@@ -19,7 +19,14 @@ const Introduction = () =>{
             <div className ="page__section">
                 <div className ="page__section__info">
                     {content.sections.introduction.paragraph.map((text,index) =>
-                    <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)}
+                                        <div key ={index}  className ="paragraph paragraph--dark u-m-bottom-paragraph">
+                                        <Highlighter 
+                                        highlightClassName="paragraph--highlight"
+                                        searchWords={["Welkom en kijk gerust verder op onze website!"]}
+                                        autoEscape={true}
+                                        textToHighlight={text}
+                                        >{text}</Highlighter>
+                                    </div>)}
                 </div>
             </div>
  
