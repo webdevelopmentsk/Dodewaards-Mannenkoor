@@ -28,7 +28,7 @@ export const content = {
     },
     news: {
         heading: 'Nieuws & Update',
-        list:[{date: '27-11-2020', text: '27 November 2020 | Update COVID-19: Uiteraard kan dit alleen doorgaan als de Coronacrisis dit toelaat. '}]
+        list:[{date: '27-11-2020', text: 'Uiteraard houden we ons aan de richtlijnen van het RIVM.'}]
     },
     agenda:{
         heading: 'Agenda',
@@ -78,7 +78,7 @@ export const content = {
     },
     becomeMember:{
         heading: 'Lid Worden',
-        paragraph:['Nieuwe leden,','Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken','Elke donderdag om 19:30 uur tot 21.30 uur. Momenteel tijdens Corona wordt er tot nader bericht niet gezongen. Voor nadere informatie mail naar secretarisdmk@outlook.com. Als je het niet kunt zeggen, zing het maar.',
+        paragraph:['Nieuwe leden,','Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken','Elke donderdag om 19:30 uur tot 21.30 uur. Momenteel tijdens Corona wordt er tot nader bericht niet gezongen. Voor nadere informatie mail naar secretarisdmk@outlook.com.',
                     'Waarom zingen?', 'Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling en techniek. De conditie van de (zang)spieren, tactiek, strategie en spelinzicht. Laat dat allemaal over aan de coach van het koor, de dirigent, dan kunnen wij samen lekker zingen. De mooiste muziekinstrumenten zijn zingende mensen!',
                     "Als je gaat zingen heb je jouw instrument altijd bij je. Dat is makkelijk, jouw instrument doet het altijd en je kunt meteen beginnen. Je kunt zonder les gehad te hebben meteen al een aardig nootje zingen. Zingen neemt niet te duiden barrières weg, verzoent en geeft verbroedering. Al zingende vervalt de schroom, komen emoties los, ontstaat begrip en verheldering. Vandaar de uitdrukking als iemand niet uit zijn woorden kan komen: ‘zing het maar’.",],
         list:

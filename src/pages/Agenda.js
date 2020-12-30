@@ -9,23 +9,17 @@ const Agenda = () => {
             <div className ="page__heading heading--m">{content.sections.agenda.heading}</div>
 
             <div className="page__section">
-                <div className="page__section__info">
-                {
-                    content.sections.agenda.list.map((item,id) =>
-                    <div className ="page__agenda__event" key ={id}>
-                    <div className ="page__agenda__event__date"><span className ="updateCard__event__date__content u-font-p">{item.dispalyDate}</span></div>
-                    <div className ="page__agenda__event__text paragraph paragraph--dark u-font-p">{item.text}</div>
-                    </div>)
-                }
-                </div>
+  
+            <p className="paragraph paragraph--dark u-font-p" > Agenda volgt als we weer kunnen starten na corona. </p>
+            
 
             </div>
             <div className ="page__heading heading--m">{content.sections.news.heading}</div>
             <div className="page__section">
-                <div className="page__section__info">
-                    {content.sections.news.list.map((item,id) => 
-                    <p className ="paragraph paragraph--dark u-font-p" key={id}>{item.text}</p>)}
-                </div>
+
+                {content.sections.news.list.map((item,id) => 
+                <p className ="paragraph paragraph--dark u-font-p" key={id}>{item.text}</p>)}
+
             </div>
 
         </div>
@@ -33,3 +27,17 @@ const Agenda = () => {
 }
 
 export default Agenda;
+
+/* Agenda List
+
+    <div className="page__section__info">
+    {
+        content.sections.agenda.list.map((item,id) =>
+        <div className ="page__agenda__event" key ={id}>
+        <div className ="page__agenda__event__date"><span className ="updateCard__event__date__content u-font-p">{item.dispalyDate}</span></div>
+        <div className ="page__agenda__event__text paragraph paragraph--dark u-font-p">{item.text}</div>
+        </div>)
+    }
+    </div>
+
+*/
