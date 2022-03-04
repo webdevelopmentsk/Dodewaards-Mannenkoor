@@ -1,6 +1,6 @@
 import React from 'react';
 import { content } from '../data/content';
-import member0 from '../assets/boadMembers/KeesVanDijk.jpg';
+import member0 from '../assets/boadMembers/GertvandeKolk.jpg';
 import member1 from '../assets/boadMembers/WimBloemendal.jpg';
 import member2 from '../assets/boadMembers/JanHeikamp.jpg';
 import member3 from '../assets/boadMembers/KeesHoogakker.jpg';

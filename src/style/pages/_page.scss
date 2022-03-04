@@ -26,7 +26,7 @@
         margin-bottom: 3rem;
         @include respond(tab-port){margin-left: 0;}
         &__info{
-            width: 55%;
+            width: 70%;
             text-align: justify;
             @include respond(tab-port){width: 80%;}
         }
@@ -189,5 +189,8 @@
     }
     &__contact{
         background-image: url(../../assets/contact.jpg);
+    }
+    &__home {
+        background-image: url(../../assets/cover.jpg);
     }
 }

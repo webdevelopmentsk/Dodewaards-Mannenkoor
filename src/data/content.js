@@ -10,7 +10,7 @@ export const content = {
       {name: "Agenda", link: "/agenda", options: ''},
       {name: "Foto's", link: "/foto", options: ''},
       {name: "Lid worden", link: "/lidworden", options: ''},
-      {name: "Sponseren", link: "/sponseren", options: ''},
+      {name: "Sponsoren", link: "/sponsoren", options: ''},
       {name: "Contact", link: "/contact", options: ''},
   ],
   sections:{
@@ -34,12 +34,7 @@ export const content = {
         heading: 'Agenda',
         upcommingEvents: 'Komende Evenementen',
         paragraph: ['Uiteraard kan dit alleen doorgaan als de Coronacrisis dit toelaat.'],
-        list:[
-            {date: '11-12-2020', dispalyDate: '11 Dec', text: 'Adventsconcert'},
-            {date: '16-12-2020', dispalyDate: '16 Dec',text: 'Kerstbakjes maken'},
-            {date: '18-12-2020', dispalyDate: '18 Dec',text: 'Kerstconcert'},
-            {date: '19-12-2020', dispalyDate: '19 Dec',text: 'Kerstbakjes verkoop @Hoge Hof Herveld'},
-        ]
+        list:[]
     },
     history:{
         heading: 'Geschiedenis',
@@ -54,9 +49,9 @@ export const content = {
     board:{
         heading: 'Bestuur',
         paragraph: ['Het bestuur bestaat uit 5 personen.',
-                    'Wim Veerman uit Ochten is onze dirigent. Tijdens het oefenen is hij heel erg gemotiveerd en bevlogen.'],
+                    'Onze dirigent is Jaap van Dijk uit Renswoude. Tijdens het oefenen is hij heel erg gemotiveerd.'],
         members:[
-        {position: 'Voorzitter', name: 'Kees van Dijk', image: '/boadMembers/KeesVanDijk.jpg'},
+        {position: 'Voorzitter', name: 'Gert van de Kolk', image: '/boadMembers/GertvandeKolk.jpg'},
         {position: 'Secretaris', name: 'Wim Bloemendal', image: '/boadMembers/WimBloemendal.jpg'},
         {position: 'Penningmeester', name: 'Jan Heikamp', image: '/boadMembers/JanHeikamp.jpg'},
         {position: 'Bestuurslid', name: 'Kees Hoogakker', image: '/boadMembers/KeesHoogakker.jpg'},
@@ -65,7 +60,8 @@ export const content = {
     },
     activities:{
         heading: "Foto's",
-        images: [{text: 'Deelname aan winkel van sinkel', image: '../assets/activities/Deelname aan winkel van sinkel.jpg'},
+        images: [
+                 {text: 'Deelname aan winkel van sinkel', image: '../assets/activities/Deelname aan winkel van sinkel.jpg'},
                  {text: 'Deelnemers oldtimerrit', image: '../assets/activities/Deelnemers oldtimerrit.jpg'},
                  {text: 'Kerststukjes maken', image: '../assets/activities/Kerststukjes.jpg'},
                  {text: 'Nieuwjaarsbijeenkomst', image: '../assets/activities/Nieuwjaarsbijeenkomst.jpg'},
@@ -74,13 +70,22 @@ export const content = {
                  {text: 'Optocht bevrijdingsdag 5-05-2015', image: '../assets/activities/Optocht bevrijdingsdag 5-05-2015-2.jpg'},
                  {text: 'Verkoop kerstbakjes', image: '../assets/activities/Verkoop kerstbakjes.jpg'},
                  {text: 'Visdag met barbecue', image: '../assets/activities/Visdag met barbecue.jpg'},
-                 {text: 'Wat zou er aanzitten', image: '../assets/activities/Wat zou er aanzitten.jpg'},],
+                 {text: 'Wat zou er aanzitten', image: '../assets/activities/Wat zou er aanzitten.jpg'},
+                 {text: 'Jan Bijl 40 jarig jubileum', image: '../assets/activities/jan.png'},
+                ],
     },
     becomeMember:{
         heading: 'Lid Worden',
-        paragraph:['Nieuwe leden,','Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken','Elke donderdag om 19:30 uur tot 21.30 uur. Momenteel tijdens Corona wordt er tot nader bericht niet gezongen. Voor nadere informatie mail naar secretarisdmk@outlook.com.',
-                    'Waarom zingen?', 'Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling en techniek. De conditie van de (zang)spieren, tactiek, strategie en spelinzicht. Laat dat allemaal over aan de coach van het koor, de dirigent, dan kunnen wij samen lekker zingen. De mooiste muziekinstrumenten zijn zingende mensen!',
-                    "Als je gaat zingen heb je jouw instrument altijd bij je. Dat is makkelijk, jouw instrument doet het altijd en je kunt meteen beginnen. Je kunt zonder les gehad te hebben meteen al een aardig nootje zingen. Zingen neemt niet te duiden barrières weg, verzoent en geeft verbroedering. Al zingende vervalt de schroom, komen emoties los, ontstaat begrip en verheldering. Vandaar de uitdrukking als iemand niet uit zijn woorden kan komen: ‘zing het maar’.",],
+        paragraph:[
+            'Nieuwe leden,',
+            'Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken',
+            "Elke donderdag om 19:30 uur tot 21.30 uur. Momenteel tijdens Corona wordt er tot nader bericht niet gezongen. Voor nadere informatie mail naar secretarisdmk@outlook.com. Waarom zingen?", 'Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling, techniek en de conditie van de (zang)spieren.',
+            'Laat dat maar over aan de coach van het koor, de dirigent. De mooiste muziekinstrumenten zijn de stemmen van zingende mensen!',
+            "Als je gaat zingen heb je jouw instrument altijd bij je. Zonder les te hebben kan je al een aardig nootje zingen. Zingen neemt barrières weg, verzoent en geeft verbroedering. Al zingend vervalt de schroom, komen emoties los, ontstaat begrip en verheldering. Vandaar de uitdrukking als iemand niet uit zijn woorden kan komen: ‘zing het maar’.",
+            'Zingen bij het Dodewaards Mannenkoor Dat is 1 keer per week trainen en regelmatig een wedstrijd. De repetities zijn iedere donderdagavond van 19:30 tot 21:30 uur met uitzondering van de schoolvakanties en er is pauze van 20:30 tot 20:45 uur.',
+            'Regelmatig geven wij concerten, waaronder kerstconcerten, en zijn er ook diverse optredens in de omgeving. Denkt u dat u niet kan zingen, daar denkt onze dirigent anders over. Wedden dat u wel kunt zingen? Noten kunnen lezen is niet noodzakelijk,',
+             'Elk jaar houden we een nieuwjaarsbijeenkomst en in de zomer een barbecue samen met onze partners, want het Dodewaards Mannenkoor is meer dan zingen alleen!'
+            ],
         list:
         {text: 'Zingen bij het Dodewaards Mannenkoor',
          options: ['Dat is 1 keer per week trainen en regelmatig een wedstrijd',
@@ -94,11 +99,11 @@ export const content = {
         }
     },
     sponser:{
-        heading: 'Sponseren',
+        heading: 'Sponsoren',
         paragraph: ['Sponsoren en donateurs,',
-                    'Het Dodewaards Mannenkoor kan bijna niet bestaan zonder sponsoring en donaties. Natuurlijk houden wij zelf ook steeds acties om onze verenigingskas aan te vullen, maar dat blijkt vaak niet genoeg om al onze onkosten te bestrijden. Als ons koor u aanspreekt en u wilt ons financieel steunen, dan zijn wij daar erg dankbaar voor.',
-                    'Als sponsor en donateur ondersteunt u het in stand houden van het koor. Als sponsor krijgt u op onze site een vermelding van het logo van uw bedrijf. Indien gewenst maken wij een link naar uw eigen website.',
-                    'Heeft u belangstelling om ons op enige manier te ondersteunen, dan kunt u contact opnemen met de secretaris.',],
+                    'Het Dodewaards Mannenkoor kan niet bestaan zonder sponsoring en donaties. Het houden van concerten is vaak een dure aangelegenheid. De opbrengst van de contributie blijkt vaak niet genoeg om al onze onkosten te dekken. Als ons koor u aanspreekt en u wilt ons financieel steunen, dan zijn wij daar erg dankbaar voor.',
+                    'Als sponsor en donateur ondersteunt u het koor, waardoor het kan blijven bestaan. Als sponsor krijgt u op onze site een vermelding met het logo van uw bedrijf. Indien gewenst maken wij een link naar uw eigen website.',
+                    'Heeft u belangstelling om ons op enige manier te ondersteunen, dan kunt u contact opnemen met de secretaris.','secretarisdmk@outlook.com '],
 
     },
     contact:{

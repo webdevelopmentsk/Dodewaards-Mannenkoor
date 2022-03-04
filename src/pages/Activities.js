@@ -11,6 +11,7 @@ import  image6  from '../assets/activities/Optocht bevrijdingsdag 5-05-2015-2.jp
 import  image7  from '../assets/activities/Verkoop kerstbakjes.jpg'
 import  image8  from '../assets/activities/Visdag met barbecue.jpg'
 import  image9  from '../assets/activities/Wat zou er aanzitten.jpg'
+import image10 from '../assets/activities/jan.png'
 
 const Activities = () =>{
 
@@ -26,6 +27,10 @@ const Activities = () =>{
             //autoplayScroll = {1}
             //autoplaySpeed ={3500}
             >
+                <div>
+                    <div className ="page__activities__caption">{captions[10]}</div>
+                    <img className ="page__activities__item" src ={image10} alt= {captions[10]}/>
+                </div>
                 <div>
                     <div className ="page__activities__caption">{captions[0]}</div>
                     <img className ="page__activities__item" src ={image0} alt= {captions[0]}/>
