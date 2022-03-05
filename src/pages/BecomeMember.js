@@ -2,6 +2,7 @@ import React from 'react';
 import { content } from '../data/content';
 import ScrollToTop from "react-scroll-to-top";
 import Highlighter from "react-highlight-words";
+import privacy from "../assets/Privacy Dodewaards Mannenkoor.pdf"
 const BecomeMember = () =>{
     
     return(
@@ -26,7 +27,14 @@ const BecomeMember = () =>{
                 <div className ="paragraph paragraph--dark">{content.sections.becomeMember.list.text}</div>
                 {content.sections.becomeMember.list.options.map((text,index) =>
                 <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)}
-                <a className ="btn btn__downloadLink" rel="noreferrer" href="https://drive.google.com/file/d/1OMHJXTlv-G58uza_BgQbUygjXVlBMKTA/view?usp=sharing" target="_blank" download><i className="fa fa-download u-m-right-small"/>{content.sections.becomeMember.download.text}</a>
+                <a 
+                    className ="btn btn__downloadLink" 
+                    href={privacy}
+                    download="privacy-dodewaards-mannenkoor.pdf"
+                >
+                        <i className="fa fa-download u-m-right-small"/>
+                        {content.sections.becomeMember.download.text}
+                </a>
                 </div>
             </div>
             <ScrollToTop className = 'btn btn__scrollToTop'smooth color={"white"} />

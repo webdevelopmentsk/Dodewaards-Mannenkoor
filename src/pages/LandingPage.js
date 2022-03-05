@@ -1,5 +1,5 @@
 import React from 'react';
-import  hatImg  from '../assets/hat.svg'
+// import  hatImg  from '../assets/hat.svg'
 const LandingPage = () =>{
 
     return(
@@ -42,7 +42,7 @@ const LandingPage = () =>{
                 <h1 className='landingPage__update__welcome u-text-white'>Welkom op de website van het Dodewaards Mannenkoor!</h1>
                 <div className="landingPage__update--wrap">
                     <div className ="heading--m u-text-gold u-m-bottom-paragraph">Nieuws</div>
-                    <div className="paragraph paragraph--dark u-font-p u-m-bottom-paragraph">Per 3 maart jongstleden zijn we na lang wachten weer begonnen met onze eerste repitie! Hier zijn we heel blij mee. Vanaf nu zullen we elke donderdagavond weer repeteren met elkaar.</div>
+                    <div className="paragraph paragraph--dark u-font-p u-m-bottom-paragraph">Vanaf nu zullen we elke donderdagavond om 19.30 uur repeteren. Dit vind plaats in de basisschool de Bellefleur, Marijkelaan 1 te Dodewaard.</div>
                     <div className="paragraph paragraph--dark u-font-p">
                     </div>
                 </div>
