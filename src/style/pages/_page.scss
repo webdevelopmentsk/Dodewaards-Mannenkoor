@@ -52,18 +52,24 @@
     &__agenda{
 
         &__event{
-            display: flex;
+            margin-top: 2rem;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 0.5fr 1fr;
+
+            @include respond(tab-port){grid-template-columns: 1fr 1fr;}
     
             &__date{
+                max-width: 14rem;
                 border-radius: 3px;
-                width: 4rem;
-                height: 4rem;
+                height: 3rem;
                 background-color: rgba($gold,0.8);
                 display: flex;
                 flex-wrap: wrap;
-                text-align: center;
-                margin-bottom: 1rem;
-                padding: 0.5rem;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                justify-content: center;
+                
                 &__content{
                     align-self: center;
                 }

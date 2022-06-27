@@ -33,8 +33,19 @@ export const content = {
     agenda:{
         heading: 'Agenda',
         upcommingEvents: 'Komende Evenementen',
-        paragraph: ['Uiteraard kan dit alleen doorgaan als de Coronacrisis dit toelaat.'],
-        list:[]
+        paragraph: [],
+        y2022:[
+            {displayDate: '19 Jun - 18 Jul', text: 'Vakantie'},
+            {displayDate: '18 Aug', text: 'Bezoek van de snackwagen van Henk Roodbeen'},
+            {displayDate: '5 - 27 Sep', text: 'U kunt stemmen op ons via Rabo clubsupport'},
+            {displayDate: '16 Dec', text: 'Kerstconcert Dodewaardse kerk'},
+            {displayDate: '17 Dec', text: 'Vanaf 8.00 uur kerstbakjesverkoop op het dorpsplein tot 12.00 uur'},
+            {displayDate: '17 Dec', text: 'Om 14.00 uur samen kerstliederen zingen in zalencentrum de Hoendrik te Herveld'}
+        ],
+        y2023:[
+            {displayDate: '3 Jan', text: 'Nieuwjaarsreceptie in het Nannenberghuis'},
+
+        ]
     },
     history:{
         heading: 'Geschiedenis',
