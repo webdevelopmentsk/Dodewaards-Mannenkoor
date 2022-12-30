@@ -21,22 +21,42 @@ const LandingPage = () =>{
                 <source src = {video} type="video/mp4" />
             </video>
         <div className ="landingPage__container">
-            <Slider 
-                arrows={false}
-                autoplay
-                autoplayScroll = {1}
-                autoplaySpeed ={4500}
+            {isBigScreen &&
+                <Slider 
+                    arrows={false}
+                    autoplay
+                    autoplayScroll = {1}
+                    autoplaySpeed ={4500}
                 >
                     <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src ={bannerWelcome} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
+                        <img className ="landingPage__banner--item" src ={bannerWelcomeL} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
                     </div>
                     <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src={bannerNewYear} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
+                        <img className ="landingPage__banner--item" src={bannerNewYearL} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
                     </div>
                     <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src={bannerPractice} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
+                        <img className ="landingPage__banner--item" src={bannerPractice}L alt="Repeteren"/>
                     </div>
-            </Slider>
+                </Slider>
+            }
+            {!isBigScreen &&
+                <Slider 
+                    arrows={false}
+                    autoplay
+                    autoplayScroll = {1}
+                    autoplaySpeed ={4500}
+                >
+                    <div className='landingPage__banner'>
+                        <img className ="landingPage__banner--item" src ={bannerWelcomeSm} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
+                    </div>
+                    <div className='landingPage__banner'>
+                        <img className ="landingPage__banner--item" src={bannerNewYearSm} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
+                    </div>
+                    <div className='landingPage__banner'>
+                        <img className ="landingPage__banner--item" src={bannerPracticeSm} alt="Repeteren"/>
+                    </div>
+                </Slider>
+            }
             <div className ="landingPage__container--img"></div>
         </div>
     </div>
