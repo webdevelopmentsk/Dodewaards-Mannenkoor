@@ -5,6 +5,7 @@ import member1 from '../assets/boadMembers/WimBloemendal.jpg';
 import member2 from '../assets/boadMembers/JanHeikamp.jpg';
 import member3 from '../assets/boadMembers/KeesHoogakker.jpg';
 import member4 from '../assets/boadMembers/CasperVanDoorn.jpg';
+import groupImg from '../assets/group-color-2.jpg';
 import ScrollToTop from "react-scroll-to-top";
 import video from '../assets/intro-video.mp4';
 import Highlighter from "react-highlight-words";
@@ -27,6 +28,7 @@ const Introduction = () =>{
                                         textToHighlight={text}
                                         >{text}</Highlighter>
                                     </div>)}
+                    <img className ="page__members__photo__content" src={groupImg} alt='Dodewaard M'/>
                 </div>
             </div>
  
@@ -38,7 +40,8 @@ const Introduction = () =>{
             <div className ="page__section__info">
                 {content.sections.history.paragraph.map((text,index) =>
                 <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)}
-                </div>
+            </div>
+            
             </div>
             <video className = "page__section__video" autoPlay muted loop playsInline>
             <source src = {video} type="video/mp4" />

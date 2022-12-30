@@ -12,6 +12,10 @@ import  image7  from '../assets/activities/Verkoop kerstbakjes.jpg'
 import  image8  from '../assets/activities/Visdag met barbecue.jpg'
 import  image9  from '../assets/activities/Wat zou er aanzitten.jpg'
 import image10 from '../assets/activities/jan.png'
+import image11 from '../assets/activities/Keurig verzorgde lekkere hapjes.jpg'
+import image12 from '../assets/activities/Gezelligheid met hapjes en partners.jpg'
+import image13  from '../assets/activities/Avond met hapjes en gezelligheid.jpg'
+
 
 const Activities = () =>{
 
@@ -28,48 +32,60 @@ const Activities = () =>{
             //autoplaySpeed ={3500}
             >
                 <div>
+                    <div className ="page__activities__caption">{captions[13]}</div>
+                    <img className ="page__activities__item" src ={image13} alt= {captions[13]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[12]}</div>
+                    <img className ="page__activities__item" src ={image12} alt= {captions[12]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[11]}</div>
+                    <img className ="page__activities__item" src ={image11} alt= {captions[11]}/>
+                </div>
+                <div>
                     <div className ="page__activities__caption">{captions[10]}</div>
                     <img className ="page__activities__item" src ={image10} alt= {captions[10]}/>
                 </div>
                 <div>
-                    <div className ="page__activities__caption">{captions[0]}</div>
-                    <img className ="page__activities__item" src ={image0} alt= {captions[0]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[1]}</div>
-                    <img className ="page__activities__item" src ={image1} alt= {captions[1]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[2]}</div>
-                    <img className ="page__activities__item" src ={image2} alt= {captions[2]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[3]}</div>
-                    <img className ="page__activities__item" src ={image3} alt= {captions[3]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[4]}</div>
-                    <img className ="page__activities__item" src ={image4} alt= {captions[4]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[5]}</div>
-                    <img className ="page__activities__item" src ={image5} alt= {captions[5]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[6]}</div>
-                    <img className ="page__activities__item" src ={image6} alt= {captions[6]}/>
-                </div>
-                <div>
-                    <div className ="page__activities__caption">{captions[7]}</div>
-                    <img className ="page__activities__item" src ={image7} alt= {captions[7]}/>
+                    <div className ="page__activities__caption">{captions[9]}</div>
+                    <img className ="page__activities__item" src ={image9} alt= {captions[9]}/>
                 </div>
                 <div>
                     <div className ="page__activities__caption">{captions[8]}</div>
                     <img className ="page__activities__item" src ={image8} alt= {captions[8]}/>
                 </div>
                 <div>
-                    <div className ="page__activities__caption">{captions[9]}</div>
-                    <img className ="page__activities__item" src ={image9} alt= {captions[9]}/>
+                    <div className ="page__activities__caption">{captions[7]}</div>
+                    <img className ="page__activities__item" src ={image7} alt= {captions[7]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[6]}</div>
+                    <img className ="page__activities__item" src ={image6} alt= {captions[6]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[5]}</div>
+                    <img className ="page__activities__item" src ={image5} alt= {captions[5]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[4]}</div>
+                    <img className ="page__activities__item" src ={image4} alt= {captions[4]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[3]}</div>
+                    <img className ="page__activities__item" src ={image3} alt= {captions[3]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[2]}</div>
+                    <img className ="page__activities__item" src ={image2} alt= {captions[2]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[1]}</div>
+                    <img className ="page__activities__item" src ={image1} alt= {captions[1]}/>
+                </div>
+                <div>
+                    <div className ="page__activities__caption">{captions[0]}</div>
+                    <img className ="page__activities__item" src ={image0} alt= {captions[0]}/>
                 </div>
 
             </Slider>

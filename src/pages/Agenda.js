@@ -12,7 +12,7 @@ const Agenda = () => {
             <p className="paragraph paragraph--dark u-font-p" > </p>
             <div className="page__section__info">
                 <div className="paragraph paragraph--dark u-font-p">
-                    Vanaf nu zullen we elke donderdagavond om 19.30 uur repeteren. Dit vind plaats in de basisschool de Bellefleur, Marijkelaan 1 te Dodewaard.
+                    Elke donderdagavond om 19.30 uur repeteren wij. Dit vind plaats in de basisschool de Bellefleur, Marijkelaan 1 te Dodewaard.
                 </div>
                 <div className="paragraph paragraph--dark u-font-p u-mtb-medium u-center-text heading--m">2022</div>
                 {

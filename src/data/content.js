@@ -35,17 +35,11 @@ export const content = {
         upcommingEvents: 'Komende Evenementen',
         paragraph: [],
         y2022:[
-            {displayDate: '19 Jun - 18 Jul', text: 'Vakantie'},
-            {displayDate: '18 Aug', text: 'Bezoek van de snackwagen van Henk Roodbeen'},
-            {displayDate: '5 - 27 Sep', text: 'U kunt stemmen op ons via Rabo clubsupport'},
-            {displayDate: '16 Dec', text: 'Kerstconcert Dodewaardse kerk'},
-            {displayDate: '17 Dec', text: 'Vanaf 8.00 uur kerstbakjesverkoop op het dorpsplein tot 12.00 uur'},
-            {displayDate: '17 Dec', text: 'Om 14.00 uur samen kerstliederen zingen in zalencentrum de Hoendrik te Herveld'}
+            {displayDate: '16 Dec', text: 'Kerstconcert Dodewaardse kerk om 20.00 uur'},
         ],
         y2023:[
-            {displayDate: '3 Jan', text: 'Nieuwjaarsreceptie in het Nannenberghuis'},
-
-        ]
+            {displayDate: '21 Jan', text: '75 Jaar Dodewaards Mannenkoor'},
+        ],
     },
     history:{
         heading: 'Geschiedenis',
@@ -83,27 +77,29 @@ export const content = {
                  {text: 'Visdag met barbecue', image: '../assets/activities/Visdag met barbecue.jpg'},
                  {text: 'Wat zou er aanzitten', image: '../assets/activities/Wat zou er aanzitten.jpg'},
                  {text: 'Jan Bijl 40 jarig jubileum', image: '../assets/activities/jan.png'},
+                 {text: 'Keurig verzorgde lekkere hapjes', image: '../assets/activities/.jpg'},
+                 {text: 'Gezelligheid met hapjes en partners', image: '../assets/activities/Gezelligheid met hapjes en partners.jpg'},
+                 {text: 'Avond met hapjes en gezelligheid', image: '../assets/activities/Avond met hapjes en gezelligheid.jpg'},
                 ],
     },
     becomeMember:{
         heading: 'Lid Worden',
         paragraph:[
             'Nieuwe leden,',
-            'Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken',
-            "Elke donderdag om 19:30 uur tot 21.30 uur. Momenteel tijdens Corona wordt er tot nader bericht niet gezongen. Voor nadere informatie mail naar secretarisdmk@outlook.com. Waarom zingen?", 'Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling, techniek en de conditie van de (zang)spieren.',
+            'Mannen uit Dodewaard en omstreken!','Kom een keer vrijblijvend kennismaken.',
+            "Elke donderdag om 19:30 uur tot 21.30 uur. Voor nadere informatie mail naar secretarisdmk@outlook.com. Waarom zingen?", 'Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling, techniek en de conditie van de (zang)spieren.',
             'Laat dat maar over aan de coach van het koor, de dirigent. De mooiste muziekinstrumenten zijn de stemmen van zingende mensen!',
             "Als je gaat zingen heb je jouw instrument altijd bij je. Zonder les te hebben kan je al een aardig nootje zingen. Zingen neemt barrières weg, verzoent en geeft verbroedering. Al zingend vervalt de schroom, komen emoties los, ontstaat begrip en verheldering. Vandaar de uitdrukking als iemand niet uit zijn woorden kan komen: ‘zing het maar’.",
-            'Zingen bij het Dodewaards Mannenkoor Dat is 1 keer per week trainen en regelmatig een wedstrijd. De repetities zijn iedere donderdagavond van 19:30 tot 21:30 uur met uitzondering van de schoolvakanties en er is pauze van 20:30 tot 20:45 uur.',
-            'Regelmatig geven wij concerten, waaronder kerstconcerten, en zijn er ook diverse optredens in de omgeving. Denkt u dat u niet kan zingen, daar denkt onze dirigent anders over. Wedden dat u wel kunt zingen? Noten kunnen lezen is niet noodzakelijk,',
-             'Elk jaar houden we een nieuwjaarsbijeenkomst en in de zomer een barbecue samen met onze partners, want het Dodewaards Mannenkoor is meer dan zingen alleen!'
+            'Zingen bij het Dodewaards Mannenkoor: Dat is 1 keer per week trainen en regelmatig een wedstrijd. De repetities zijn iedere donderdagavond van 19:30 tot 21:30 uur met uitzondering van de schoolvakanties en er is pauze van 20:30 tot 20:45 uur.',
+            'Regelmatig geven wij concerten, waaronder kerstconcerten, en zijn er ook diverse optredens in de omgeving. Denkt u dat u niet kan zingen? Daar denkt onze dirigent anders over. Wedden dat u wel kunt zingen? Noten kunnen lezen is niet noodzakelijk.',
             ],
-        list:
-        {text: 'Zingen bij het Dodewaards Mannenkoor',
-         options: ['Dat is 1 keer per week trainen en regelmatig een wedstrijd',
-         'De repetities zijn iedere donderdagavond van 19:30 tot 21:30 uur met uitzondering van de schoolvakanties en er is pauze van 20:30 tot 20:45 uur.',
-         'Regelmatig geven wij concerten en zijn er ook diverse optredens in de omgeving, kerstconcerten e.d.',
-         'U mag onze dirigent overtuigen dat u niet kunt zingen, wedden dat u het wel kunt. Noten kunnen lezen is niet noodzakelijk, maar is wel makkelijker.','Elk jaar houden we een nieuwjaarsbijeenkomst en in de zomer een barbecue samen met onze partners, want het Dodewaards Mannenkoor is meer dan zingen alleen!']
-        },
+        // list:
+        // {text: 'Zingen bij het Dodewaards Mannenkoor',
+        //  options: ['Dat is 1 keer per week trainen en regelmatig een wedstrijd',
+        //  'De repetities zijn iedere donderdagavond van 19:30 tot 21:30 uur met uitzondering van de schoolvakanties en er is pauze van 20:30 tot 20:45 uur.',
+        //  'Regelmatig geven wij concerten en zijn er ook diverse optredens in de omgeving, kerstconcerten e.d.',
+        //  'U mag onze dirigent overtuigen dat u niet kunt zingen, wedden dat u het wel kunt. Noten kunnen lezen is niet noodzakelijk, maar is wel makkelijker.','Elk jaar houden we een nieuwjaarsbijeenkomst en in de zomer een barbecue samen met onze partners, want het Dodewaards Mannenkoor is meer dan zingen alleen!']
+        // },
         download:{
             text: 'Download de privacyverklaring',
 

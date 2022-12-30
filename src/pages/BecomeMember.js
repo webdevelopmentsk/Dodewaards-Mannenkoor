@@ -24,9 +24,9 @@ const BecomeMember = () =>{
             </div>
             <div className="page__section">
                 <div className="page__section__info">
-                <div className ="paragraph paragraph--dark">{content.sections.becomeMember.list.text}</div>
+                {/* <div className ="paragraph paragraph--dark">{content.sections.becomeMember.list.text}</div>
                 {content.sections.becomeMember.list.options.map((text,index) =>
-                <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)}
+                <div key ={index} className ="paragraph paragraph--dark u-m-bottom-paragraph">{text}</div>)} */}
                 <a 
                     className ="btn btn__downloadLink" 
                     href={privacy}

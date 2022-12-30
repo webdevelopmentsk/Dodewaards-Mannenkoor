@@ -187,8 +187,8 @@
         background-image: url("../../assets/activities/Optocht\ bevrijdingsdag\ 5-05-2015-2.jpg");
     }
     &__becomeMember{
-        &--1{background-image: url("../../assets/becomeMember-1.jpg");}
-        &--2{background-image: url("../../assets/becomeMember-2.jpg");}
+        &--1{background-image: url("../../assets/cover-old.jpg");}
+        &--2{background-image: url("../../assets/becomeMember-1.jpg");}
     }
     &__sponser{
         background-image: url("../../assets/sponser.jpg");
@@ -197,6 +197,6 @@
         background-image: url(../../assets/contact.jpg);
     }
     &__home {
-        background-image: url(../../assets/cover.jpg);
+        background-image: url(../../assets/cover-old.jpg);
     }
 }
