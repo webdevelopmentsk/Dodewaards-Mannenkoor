@@ -34,9 +34,6 @@ export const content = {
         heading: 'Agenda',
         upcommingEvents: 'Komende Evenementen',
         paragraph: [],
-        y2022:[
-            {displayDate: '16 Dec', text: 'Kerstconcert Dodewaardse kerk om 20.00 uur'},
-        ],
         y2023:[
             {displayDate: '21 Jan', text: '75 Jaar Dodewaards Mannenkoor'},
         ],

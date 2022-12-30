@@ -28,7 +28,7 @@ const Introduction = () =>{
                                         textToHighlight={text}
                                         >{text}</Highlighter>
                                     </div>)}
-                    <img className ="page__members__photo__content" src={groupImg} alt='Dodewaard M'/>
+                    <img className ="page__members__photo__content" src={groupImg} alt='Dedewaards Mannenkoor members'/>
                 </div>
             </div>
  
