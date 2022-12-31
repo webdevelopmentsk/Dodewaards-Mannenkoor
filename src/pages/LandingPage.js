@@ -9,11 +9,10 @@ import bannerNewYearSm from '../assets/banner-happy-new-year-sm.png'
 import bannerPracticeL from '../assets/banner-practice-l.png'
 import bannerPracticeSm from '../assets/banner-practice-sm.png'
 
+import groupImg from '../assets/group-color.jpg'
+
 const LandingPage = () =>{
     const isBigScreen = window.innerWidth > 768
-    const bannerWelcome = isBigScreen ? bannerWelcomeL : bannerWelcomeSm
-    const bannerNewYear = isBigScreen ? bannerNewYearL : bannerNewYearSm
-    const bannerPractice = isBigScreen ? bannerPracticeL : bannerPracticeSm
 
     return(
     <div className ="landingPage">
@@ -21,43 +20,47 @@ const LandingPage = () =>{
                 <source src = {video} type="video/mp4" />
             </video>
         <div className ="landingPage__container">
-            {isBigScreen &&
-                <Slider 
-                    arrows={false}
-                    autoplay
-                    autoplayScroll = {1}
-                    autoplaySpeed ={4500}
-                >
-                    <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src ={bannerWelcomeL} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
-                    </div>
-                    <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src={bannerNewYearL} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
-                    </div>
-                    <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src={bannerPractice}L alt="Repeteren"/>
-                    </div>
-                </Slider>
-            }
-            {!isBigScreen &&
-                <Slider 
-                    arrows={false}
-                    autoplay
-                    autoplayScroll = {1}
-                    autoplaySpeed ={4500}
-                >
-                    <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src ={bannerWelcomeSm} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
-                    </div>
-                    <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src={bannerNewYearSm} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
-                    </div>
-                    <div className='landingPage__banner'>
-                        <img className ="landingPage__banner--item" src={bannerPracticeSm} alt="Repeteren"/>
-                    </div>
-                </Slider>
-            }
-            <div className ="landingPage__container--img"></div>
+            <div className='landingPage__container--wrapper'>
+                <div className ="landingPage__container__img">
+                    <img className ="landingPage__container__img--item" src={groupImg} alt="Dodewaards Mannenkoor"></img>
+                </div>
+                {isBigScreen &&
+                    <Slider 
+                        arrows={false}
+                        autoplay
+                        autoplayScroll = {1}
+                        autoplaySpeed ={4500}
+                    >
+                        <div className='landingPage__banner'>
+                            <img className ="landingPage__banner--item" src ={bannerWelcomeL} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
+                        </div>
+                        <div className='landingPage__banner'>
+                            <img className ="landingPage__banner--item" src={bannerNewYearL} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
+                        </div>
+                        <div className='landingPage__banner'>
+                            <img className ="landingPage__banner--item" src={bannerPracticeL} alt="Repeteren"/>
+                        </div>
+                    </Slider>
+                }
+                {!isBigScreen &&
+                    <Slider 
+                        arrows={false}
+                        autoplay
+                        autoplayScroll = {1}
+                        autoplaySpeed ={4500}
+                    >
+                        <div className='landingPage__banner'>
+                            <img className ="landingPage__banner--item" src ={bannerWelcomeSm} alt="Welkom  op de website van het Dodewaards Mannenkoor"/>
+                        </div>
+                        <div className='landingPage__banner'>
+                            <img className ="landingPage__banner--item" src={bannerNewYearSm} alt="Fijne feestdagen en een gelukkig & gezond 2023!"/>
+                        </div>
+                        <div className='landingPage__banner'>
+                            <img className ="landingPage__banner--item" src={bannerPracticeSm} alt="Repeteren"/>
+                        </div>
+                    </Slider>
+                }
+            </div>
         </div>
     </div>
     )

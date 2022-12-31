@@ -17,6 +17,7 @@
         animation: moveInLeft 1s ease-in;
         @include respond(tab-port){margin-left: 0;width: 80%;}
     }
+
     &__section{
         width: 100%;
         margin-left: $navigation-width;
@@ -130,12 +131,29 @@
         }
     }
 
+    &__sponser {
+        &__img {
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+            &--item {
+                width: 130px;
+                cursor: pointer;
+            }
+        }
+        &__sub-heading {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
 }
 
 .parallax{
 
     width: 100%;
-    min-height: 70vh; 
+    min-height: 60vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

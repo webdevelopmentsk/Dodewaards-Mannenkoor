@@ -1,7 +1,7 @@
 .heading{
     &--l{text-transform: uppercase; font-size: $font-heading-l;letter-spacing: 3px;font-weight: 400;}
     &--m{font-size: $font-heading-m;letter-spacing: 3px;font-weight: 800;}
-    &--m{text-transform: uppercase;font-size: $font-heading-s;letter-spacing: 3px;}
+    &--sm{font-size: $font-heading-s;letter-spacing: 3px;}
 }
 .paragraph{
     font-size: $font-p;
