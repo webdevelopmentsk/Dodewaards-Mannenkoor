@@ -2,10 +2,15 @@ import React from 'react';
 import { content } from '../data/content';
 
 const Agenda = () => {
+    const today = new Date()
+    const hasNotPassed = (date) => {
+        console.log(new Date(date))
+        return new Date(date) > today
+    }
 
     return(
         <div className ="page__container">
-            <div className ="page__heading heading--m">{content.sections.agenda.heading}</div>
+            <div className ="page__heading heading--m page__heading__agenda">{content.sections.agenda.heading}</div>
 
             <div className="page__section">
   
@@ -16,27 +21,11 @@ const Agenda = () => {
                 </div>
                 <div className="paragraph paragraph--dark u-font-p u-mtb-medium u-center-text heading--m">2023</div>
                 {
-                    content.sections.agenda.y2023.length ? 
-                    content.sections.agenda.y2023.map((item,id) =>
-                    <div className ="page__agenda__event" key ={id}>
-                    <div className ="page__agenda__event__date"><span className ="updateCard__event__date__content u-font-p">{item.displayDate}</span></div>
+                    content.sections.agenda.y2023.filter(item => hasNotPassed(item.date)).map((item,id) =>
+                    <div className ="page__agenda__event" key ={id}> 
+                    <div className ="page__agenda__event__date"><span className ="updateCard__event__date__content u-font-p">{item.displayDate} </span></div>
                     <div className ="page__agenda__event__text paragraph paragraph--dark u-font-p">{item.text}</div>
                     </div>)
-                    :
-                    <div className="page__section__info">
-                        <div className ="page__agenda__event__date">2022</div>
-                    {
-                        content.sections.agenda.y2022.map((item,id) =>
-                        <div className ="page__agenda__event" key ={id}>
-                        <div className ="page__agenda__event__date">
-                            <span className ="updateCard__event__date__content u-font-p">
-                            {item.displayDate}
-                            </span>
-                        </div>
-                        <div className ="page__agenda__event__text paragraph paragraph--dark u-font-p">{item.text}</div>
-                        </div>)
-                    }
-                    </div>
                 }
     </div>
 

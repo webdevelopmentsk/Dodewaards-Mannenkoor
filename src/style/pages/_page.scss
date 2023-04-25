@@ -16,6 +16,9 @@
         margin-left: $navigation-width;
         animation: moveInLeft 1s ease-in;
         @include respond(tab-port){margin-left: 0;width: 80%;}
+        &__agenda {
+            @include respond(tab-port){margin-top: 22%;}
+        }
     }
 
     &__section{
