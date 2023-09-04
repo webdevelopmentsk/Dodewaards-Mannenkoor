@@ -35,13 +35,13 @@ export const content = {
         upcommingEvents: 'Komende Evenementen',
         paragraph: [],
         y2023:[
-            {displayDate: '13 April', text: 'Zingen in Zorgcentrum Elim in Ochten', date: '04/13/2023'},
-            {displayDate: '22 April', text: 'Tent samen met KNA opzetten op het dorpsplein', date: '04/22/2023'},
-            {displayDate: '27 April', text: 'Om 11.00 uur zingen tijdens de aubade te Dodewaard', date: '04/27/2023'},
-            {displayDate: '6 Juli', text: 'Zingen in het Vrijhof in Tiel om 19.30 uur', date: '07/06/2023'},
-            {displayDate: '13 Juli', text: 'Laatste oefenavond voor de vakantie', date: '07/13/2023'},
-            {displayDate: '31 Augustus', text: 'De eerste oefenavond na de vakantie', date: '08/31/2023'},
-            {displayDate: '26 Oktober', text: 'Zingen in Kesteren op uitnodiging van gemengd koor Kesteren.', date: '10/26/2023'},
+            {displayDate: '31 Aug', text: 'De eerste oefenavond na de vakantie', date: '08/31/2023'},
+            {displayDate: '4-26 Sep', text: 'Gelegenheid tot stemmen Rabo Clubsupport', date: '9/26/2023'},
+            {displayDate: '26 Okt', text: 'Zingen in Kesteren', date: '10/26/2023'},
+            {displayDate: '22 Dec', text: 'Muzikale Kerst (meer details volgen later)', date: '12/22/2023'},
+        ],
+        y2024:[
+            {displayDate: '4 Jan', text: 'Nieuwjaarsreceptie', date: '01/04/2024'},
         ],
     },
     history:{

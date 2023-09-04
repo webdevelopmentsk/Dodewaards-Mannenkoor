@@ -27,6 +27,14 @@ const Agenda = () => {
                     <div className ="page__agenda__event__text paragraph paragraph--dark u-font-p">{item.text}</div>
                     </div>)
                 }
+                <div className="paragraph paragraph--dark u-font-p u-mtb-medium u-center-text heading--m">2024</div>
+                {
+                    content.sections.agenda.y2024.filter(item => hasNotPassed(item.date)).map((item,id) =>
+                    <div className ="page__agenda__event" key ={id}> 
+                    <div className ="page__agenda__event__date"><span className ="updateCard__event__date__content u-font-p">{item.displayDate} </span></div>
+                    <div className ="page__agenda__event__text paragraph paragraph--dark u-font-p">{item.text}</div>
+                    </div>)
+                }
     </div>
 
             </div>
